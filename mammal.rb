@@ -1,3 +1,5 @@
+require 'pry'
+
 class Mammal
   attr_accessor :name, :age
 
@@ -11,8 +13,8 @@ class Mammal
   end
 
   def speak
-    raise "you must override this in a child class"
+    raise "EEE you must override this in a child class"
   end
 end
 
-# Mammal.new.speak
+Mammal.new('cat', 4)
